@@ -7,8 +7,11 @@
 //
 
 #import "RPViewController.h"
+#import <RPSlidingSelector/RPSlidingSelector.h>
 
-@interface RPViewController ()
+@interface RPViewController () <RPSlidingSelectorDelegate>
+@property (strong, nonatomic) IBOutlet RPSlidingSelector *slidingSelector;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel;
 
 @end
 
@@ -17,13 +20,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.slidingSelector.delegate = self;
+    self.infoLabel.text = @"";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.slidingSelector setSelectedItem:3];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)slidingSelector:(RPSlidingSelector *)selector didSelectIndex:(NSInteger)index {
+    self.infoLabel.text = [NSString stringWithFormat:@"Selected button %ld", index];
 }
 
 @end

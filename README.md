@@ -1,15 +1,11 @@
 # RPSlidingSelector
 
-[![CI Status](http://img.shields.io/travis/ramon.poca@gmail.com/RPSlidingSelector.svg?style=flat)](https://travis-ci.org/ramon.poca@gmail.com/RPSlidingSelector)
-[![Version](https://img.shields.io/cocoapods/v/RPSlidingSelector.svg?style=flat)](http://cocoapods.org/pods/RPSlidingSelector)
-[![License](https://img.shields.io/cocoapods/l/RPSlidingSelector.svg?style=flat)](http://cocoapods.org/pods/RPSlidingSelector)
-[![Platform](https://img.shields.io/cocoapods/p/RPSlidingSelector.svg?style=flat)](http://cocoapods.org/pods/RPSlidingSelector)
+A selector allowing multiple buttons in an horizontal scrollview. It automatically centers the selected item.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -22,7 +18,7 @@ pod 'RPSlidingSelector'
 
 ## Author
 
-ramon.poca@gmail.com, ramon.poca@gmail.com
+Ramon Poca <ramon.poca@gmail.com>
 
 ## License
 
