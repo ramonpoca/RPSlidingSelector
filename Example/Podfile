@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RPSlidingSelector_Example' do
+  pod 'RPSlidingSelector', :path => '../'
+
+  target 'RPSlidingSelector_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
