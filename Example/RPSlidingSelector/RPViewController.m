@@ -24,8 +24,8 @@
     self.infoLabel.text = @"";
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [self.slidingSelector setSelectedItem:3];
+- (void)viewDidAppear:(BOOL)animated {
+    [self.slidingSelector selectItemAnimated:2];
 }
 
 - (void)didReceiveMemoryWarning

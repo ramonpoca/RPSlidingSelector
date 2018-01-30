@@ -154,8 +154,8 @@ NSInteger tagSort(id num1, id num2, void *context) {
       _selectedItem = item;
       [self unselectAllButtons];
       button.selected = YES;
-      CGFloat x = button.frame.origin.x + button.frame.size.width/2.0;
-      [_scrollView setContentOffset:CGPointMake(x, 0) animated:NO];
+      CGFloat x = button.frame.origin.x - (self.bounds.size.width/2) + button.frame.size.width/2.0;
+      [_scrollView setContentOffset:CGPointMake(x, 0) animated:YES];
       break;
     }
   }
